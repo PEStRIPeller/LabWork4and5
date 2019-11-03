@@ -1,7 +1,12 @@
 package Nikita;
 
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import com.google.gson.Gson;
+
+
+
 
 class Main {
 
@@ -54,5 +59,9 @@ class Main {
         System.out.println("-------------- After removing --------------");
         for (int i = 0; i < list.luggageList.size(); i++) {
                 System.out.println(list.luggageList.get(i));}
+        String json =NyDavai.GSON.toJson(list);
+        System.out.println("\n avada kedavra" + json);
+
+
     }
 }
