@@ -15,5 +15,7 @@ class LuggageBranch {
             sum += luggageInfo.getLuggageWeight();
         }
         return sum;
+
     }
+
 }
